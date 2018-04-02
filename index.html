@@ -1,35 +1,12 @@
 ---
 layout: default
 ---
-
-{% include social-networks.html %}
-
 <!-- header-->
-<section class="header accueil">
-    <div class="logo-blanc">
-        <img alt="logo-blanc" class="logo-blanc" src="Images/Pictogrammes/logo-blanc.png">
-    </div>
-    <div class="navbar">
-        <div class="text-menu">
-            <a href="#" target="_blank">ACCUEIL</a>
-        </div>
-        <div class="text-menu">
-            <a href="#" target="_blank">TRAVAUX</a>
-        </div>
-        <div class="text-menu">
-            <a href="#" target="_blank">COMPÉTENCES</a>
-        </div>
-        <div class="text-menu">
-            <a href="#" target="_blank">À PROPOS DE MOI</a>
-        </div>
-        <div class="text-menu">
-            <a href="#" target="_blank">CONTACT</a>
-        </div>
-    </div>
+<section class="header-pagegarde">
+    {% include navbar.html logo="white"%}
     <div class="TitreJS">
         <img alt="" src="Images/Pages de garde/accueil-titre.png">
     </div>
-
 </section>
 
 <!-- TRAVAUX-->
@@ -47,23 +24,23 @@ layout: default
 </div>
 <div class="container">
     <section class="galerie">
-        <div class="navbar">
-            <div class="galerie-title">
+        <div class="navbar grey">
+            <div class="elem-nav-grey">
                 <a href="#" target="_blank">TOUT</a>
             </div>
-            <div class="galerie-title">
+            <div class="elem-nav-grey">
                 <a href="#" target="_blank">CREATION GRAPHIQUE</a>
             </div>
-            <div class="galerie-title">
+            <div class="elem-nav-grey">
                 <a href="#" target="_blank">DESIGN WEB</a>
             </div>
-            <div class="galerie-title">
+            <div class="elem-nav-grey">
                 <a href="#" target="_blank">DESIGN MOBILE</a>
             </div>
-            <div class="galerie-title">
+            <div class="elem-nav-grey">
                 <a href="#" target="_blank">CREATION AUDIOVISUELLE</a>
             </div>
-            <div class="galerie-title">
+            <div class="elem-nav-grey">
                 <a href="#" target="_blank">PHOTOGRAPHIE</a>
             </div>
         </div>
@@ -183,17 +160,15 @@ layout: default
         </div>
     </div>
     <div class="formulairecontact">
-        <form action="/action_page.php">
+        <form method="POST" netlify>
             <div class="form-element">
                 <label for="fname">NOM</label>
                 <input id="NOM" name="NOM" placeholder="NOM" type="text">
             </div>
-
             <div class="form-element">
                 <label for="lname">EMAIL</label>
                 <input id="EMAIL" name="EMAIL" placeholder="EMAIL" type="text">
             </div>
-
             <div class="form-element">
                 <label for="subject">MESSAGE</label>
                 <textarea id="MESSAGE" name="MESSAGE" placeholder="MESSAGE" style="height:200px"></textarea>
@@ -203,31 +178,5 @@ layout: default
                 <input type="submit" value="ENVOYER">
             </div>
         </form>
-    </div>
-</section>
-
-<!-- END réseaux sociaux -->
-
-<section class="container">
-    <div class="reseauxsociaux">
-        <div class="pictoreseauxsociaux">
-            <a href="#"><img alt="" src="Images/Pictogrammes/instagram.png">
-            </a>
-        </div>
-        <div class="pictoreseauxsociaux">
-            <a href="#"><img "" alt="" src="Images/Pictogrammes/facebook.png">
-            </a>
-        </div>
-        <div class="pictoreseauxsociaux">
-            <a href="#"><img alt="" src="Images/Pictogrammes/linkedin.png">
-            </a>
-        </div>
-        <div class="pictoreseauxsociaux">
-            <a href="#"><img alt="" src="Images/Pictogrammes/behance.png">
-            </a>
-        </div>
-    </div>
-    <div class="signature">
-        Thomas Lammens - Graphic Designer, 2018
     </div>
 </section>

@@ -1,11 +1,15 @@
 /* global classes */
+body {
+    font-family: 'PT Sans', sans-serif;
+}
 
 .container {
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 70px;
     padding-right: 70px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
+
 
 /* Police - size  - titre - text ... */
 .text-menu {
@@ -19,6 +23,7 @@
     font-size: 70px;
     text-align: center;
     font-weight: bold;
+    padding: 10px;
 }
 
 .text {
@@ -56,53 +61,53 @@
     position: relative;
 }
 
-.navbar .text-menu {
-    display: inline;
-    padding: 45px;
-    padding-bottom: 0px;
+.navbar a:link,
+.navbar a:visited {
     color: white;
 }
-.navbar .text-menu a:visited {
-    color:white;
-}
 
-.navbar .text-jeu {
-    display: inline;
-    padding: 45px;
-    padding-bottom: 0px;
+.navbar.black a:link,
+.navbar.black a:visited {
     color: black;
 }
-.navbar .text-jeu a:visited {
-    color:black;
+
+.navbar.grey a:link,
+.navbar.grey a:visited {
+    color: grey;
+}
+
+.elem-nav {
+    display: inline;
+    padding: 45px;
+}
+
+.elem-nav-grey {
+    display: inline;
+    padding: 25px;
+}
+
+/* logo */
+.logo-white {
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.logo-black {
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
 }
 
 /* Header */
 
-.header {
+.header-pagegarde {
+    background-image: url("../Images/Pages de garde/accueil.jpg");
     background-position: center 0px;
     background-repeat: no-repeat;
     width: 100%;
     height: 920px;
-}
-.accueil {
-    background-image: url("../Images/Pages de garde/accueil.jpg");
-}
-.logo-blanc {
-    width: 50px;
-    position: absolute;
-    top: 20px;
-    left: 40px;
-}
-.logo-noir {
-    width: 50px;
-    position: absolute;
-    top: 20px;
-    left: 40px;
-}
-
-.header .navbar a:link {
-    color: white;
-    background-color: transparent;
 }
 
 .TitreJS {
@@ -113,19 +118,14 @@
     width: 100%;
 
 }
+
 /* menu-travaux */
 
 .head {
-    padding: 20px;
-    padding-left: 250px;
-    padding-right: 250px;
-
-}
-
-.navbar .galerie-title {
-    display: inline;
-    padding: 20px;
-    padding-bottom: 0px;
+    padding-top: 40px;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-bottom: 30px;
 }
 
 .galerie-img .img-menudemi, .galerie-img .img-menutiers{
@@ -138,10 +138,6 @@
     padding-top: 2px;
 }
 
-.galerie .navbar a:link {
-    color: grey;
-    background-color: transparent;
-}
 .img-menu{
     width: calc(100% - 4px);
     height: auto;
@@ -203,7 +199,7 @@
 
 .projetrea{
     background-image: url("../Images/Pictogrammes/logotl.png");
-    background-size: 300px;
+    background-size: 400px;
     background-position: center;
     background-repeat: no-repeat;
     width: calc((100%/2) - 40px);
