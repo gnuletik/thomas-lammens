@@ -1,0 +1,325 @@
+/* global classes */
+
+.container {
+    padding-top: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+}
+
+/* This is a test comment */
+
+/* Police - size  - titre - text ... */
+.text-menu {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.title {
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.galerie-title {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2;
+    color: grey;
+    padding: 0px;
+}
+
+.competence-title {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding-bottom: 40px;
+}
+
+/* navbar */
+.navbar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+}
+
+.navbar .text-menu {
+    display: inline;
+    padding: 45px;
+    padding-bottom: 0px;
+    color: white;
+}
+.navbar .text-menu a:visited {
+    color:white;
+}
+
+.navbar .text-jeu {
+    display: inline;
+    padding: 45px;
+    padding-bottom: 0px;
+    color: black;
+}
+.navbar .text-jeu a:visited {
+    color:black;
+}
+
+/* Header */
+
+.header {
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 920px;
+}
+.accueil {
+    background-image: url("../Images/Pages de garde/accueil.jpg");
+}
+.logo-blanc {
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.logo-noir {
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.header .navbar a:link {
+    color: white;
+    background-color: transparent;
+}
+
+.TitreJS {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    width: 100%;
+
+}
+/* menu-travaux */
+
+.head {
+    padding: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+
+}
+
+.navbar .galerie-title {
+    display: inline;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.galerie-img .img-menudemi, .galerie-img .img-menutiers{
+    display: inline-block;
+}
+
+.ligne {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 2px;
+}
+
+.galerie .navbar a:link {
+    color: grey;
+    background-color: transparent;
+}
+.img-menu{
+    width: calc(100% - 4px);
+    height: auto;
+    padding: 2px;
+}
+.img-menudemi {
+    width: calc((100%/2) - 4px);
+    height: auto;
+    padding: 2px;
+}
+.img-menutiers {
+    width: calc((100%/3) - 4px);
+    height: auto;
+    padding: 2px;
+}
+
+
+/* menu compétences */
+.img-competences {
+    width: 40px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.lignecomp {
+    text-align: center;
+}
+
+.blockcomp {
+    width: calc((100%/3) - 5px);
+    height: auto;
+    padding: 20px;
+    display: inline-block;
+}
+
+
+
+/* à propos de moi */
+.aproposdemoi {
+    display: flex;
+    background-image: url("../Images/Pages de garde/proposdemoi.jpg");
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 920px;
+    flex-direction: column;
+    justify-content:center;
+    color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+/* CONTACT */
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 100px;
+}
+
+.projetrea{
+    background-image: url("../Images/Pictogrammes/logo-noir.png");
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: calc((100%/2) - 40px);
+    height: auto;
+    padding: 20px;
+}
+
+.formulairecontact{
+    width: calc((100%/2) - 40px);
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+
+/* reseaux sociaux */
+
+.reseauxsociaux {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.pictoreseauxsociaux {
+    width: 40px;
+    height: auto;
+    padding: 5px;
+}
+.signature{
+    font-size: 10px;
+    text-align: center;
+    color: grey;
+    padding: 10px;
+}
+
+/* WEBSITE */
+
+.WEBSITE{
+    background-image: url("../Images/Gallerie/Accueil/1.jpg");
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 920px;
+    padding: 0px;
+}
+/* APPLICATION */
+
+.APPLICATION {
+    background-image: url("../Images/Gallerie/Accueil/2.jpg");
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 920px;
+    padding: 0px;
+}
+
+.devapplication {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.element-application {
+    width: calc((100%/4) - 5px);
+    height: auto;
+    padding: 20px;
+    display: inline-block;
+
+}
+
+/* ALBUM */
+
+.ALBUM {
+    background-image: url("../Images/Gallerie/Accueil/3.jpg");
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 920px;
+    padding: 0px;
+}
+/* AFFICHE */
+
+.AFFICHE-DOUR {
+    background-image: url("../Images/Gallerie/Accueil/4.jpg");
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 920px;
+    padding: 0px;
+}
+
+/* VETEMENTS */
+
+.VETEMENTS {
+    background-image: url("../Images/Gallerie/Accueil/5.jpg");
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 920px;
+    padding: 0px;
+}
+/* Jeu de société */
+
+.Jeu-de-societe{
+    background-image: url("../Images/Gallerie/Accueil/6.jpg");
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 920px;
+    padding: 0px;
+}
