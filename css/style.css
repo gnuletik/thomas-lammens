@@ -122,10 +122,10 @@ body {
 /* menu-travaux */
 
 .head {
-    padding-top: 40px;
+    padding-top: 80px;
     padding-left: 170px;
     padding-right: 170px;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 }
 
 .galerie-img .img-menudemi, .galerie-img .img-menutiers{
@@ -198,10 +198,14 @@ body {
 }
 
 .projetrea{
+    display: flex;
+    flex-direction: row;
     background-image: url("../Images/Pictogrammes/logotl.png");
     background-size: 400px;
     background-position: center;
     background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content:center;
     width: calc((100%/2) - 40px);
     height: auto;
     padding: 20px;
@@ -224,7 +228,7 @@ body {
     flex-direction: row;
     justify-content:center;
     align-items: flex-end;
-    padding: 10px;
+    padding-top: 50px;
 }
 
 .pictoreseauxsociaux {
@@ -245,6 +249,7 @@ body {
     background-image: url("../Images/Gallerie/Accueil/1.jpg");
     background-position: center 0px;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 920px;
     padding: 0px;
@@ -255,33 +260,33 @@ body {
     background-image: url("../Images/Gallerie/Accueil/2.jpg");
     background-position: center 0px;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 920px;
     padding: 0px;
 }
 
-.devapplication {
+
+.element-application {
     display: flex;
     flex-direction: column;
     justify-content:center;
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
-.element-application {
-    width: calc((100%/4) - 5px);
+    width: calc((100%/2) - 100px);
     height: auto;
     padding: 20px;
     display: inline-block;
-
 }
 
+.picto-application {
+    width: 10px;
+}
 /* ALBUM */
 
 .ALBUM {
     background-image: url("../Images/Gallerie/Accueil/3.jpg");
     background-position: center 0px;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 920px;
     padding: 0px;
@@ -292,6 +297,7 @@ body {
     background-image: url("../Images/Gallerie/Accueil/4.jpg");
     background-position: center 0px;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 920px;
     padding: 0px;
@@ -303,6 +309,7 @@ body {
     background-image: url("../Images/Gallerie/Accueil/5.jpg");
     background-position: center 0px;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 920px;
     padding: 0px;
@@ -313,6 +320,7 @@ body {
     background-image: url("../Images/Gallerie/Accueil/6.jpg");
     background-position: center 0px;
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 920px;
     padding: 0px;
