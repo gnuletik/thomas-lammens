@@ -50,6 +50,10 @@ body {
     padding-bottom: 40px;
 }
 
+.description.compétences {
+    position: absolute;
+}
+
 /* navbar */
 .navbar {
     font-family: Arial, Helvetica, sans-serif;
