@@ -169,6 +169,13 @@ body {
 }
 
 /* menu compétences */
+.description-compétences {
+    position: absolute;
+    width: calc((100%/3) - 4px);
+    height: auto;
+    padding: 2px;
+}
+
 .img-competences {
     width: 40px;
     margin: 0 auto;
@@ -187,9 +194,7 @@ body {
 }
 
 .description-compétences {
-    position: absolute;
     opacity: 0;
-    text-align:center;
 }
 
 .description-compétences:hover {
@@ -276,6 +281,7 @@ body {
     height: 920px;
     padding: 0px;
 }
+
 /* APPLICATION */
 
 .APPLICATION {
@@ -309,7 +315,7 @@ body {
     flex-direction: column;
     justify-content: space-center;
     padding: 55px;
-    text-align:justify;
+    text-align:space-center;
 }
 
 .picto-application {
