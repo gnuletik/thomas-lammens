@@ -124,8 +124,8 @@ body {
 
 .head {
     padding-top: 80px;
-    padding-left: 170px;
-    padding-right: 170px;
+    padding-left: 160px;
+    padding-right: 160px;
     padding-bottom: 80px;
 }
 
@@ -169,13 +169,6 @@ body {
 }
 
 /* menu compétences */
-.description-compétences {
-    position: absolute;
-    width: calc((100%/3) - 4px);
-    height: auto;
-    padding: 2px;
-}
-
 .img-competences {
     width: 40px;
     margin: 0 auto;
@@ -194,7 +187,11 @@ body {
 }
 
 .description-compétences {
+    position: absolute;
     opacity: 0;
+    width: calc((100%/3) - 4px);
+    height: auto;
+    padding: 2px;
 }
 
 .description-compétences:hover {
@@ -281,6 +278,44 @@ body {
     height: 920px;
     padding: 0px;
 }
+
+.galerie-website {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+}
+
+.img-website1 {
+    left: 400px;
+    top: 1300px;
+    width: calc(100%/1.5);
+    padding: 5px;
+    position:absolute;
+}
+.img-website2 {
+    left: 55px;
+    top: 1600px;
+    width: calc(100%/1.5);
+    padding: 5px;
+    position:absolute;
+}
+
+.img-website3 {
+    left: 450px;
+    top: 1860px;;
+    width: calc(100%/1.5);
+    padding: 5px;
+    position:absolute;
+}
+.img-website4 {
+    left: 50px;
+    top: 2130px;
+    width: calc(100%/1.5);
+    padding: 5px;
+    position:absolute;
+}
+
+
 
 /* APPLICATION */
 
