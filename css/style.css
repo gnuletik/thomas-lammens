@@ -3,6 +3,7 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 
+
 .container {
     padding-top: 10px;
     padding-left: 70px;
@@ -24,6 +25,8 @@ body {
     text-align: center;
     font-weight: bold;
     padding: 10px;
+    text-shadow: 0px 1px #4A494C;
+
 }
 
 .text {
@@ -31,6 +34,9 @@ body {
     text-align: center;
     font-weight: bold;
     line-height: 1.2;
+    text-shadow: 0px 1px #4A494C;
+
+
 }
 
 .galerie-title {
@@ -46,7 +52,6 @@ body {
     font-size: 22px;
     text-align: center;
     font-weight: bold;
-    color: black;
     padding-bottom: 40px;
 }
 
@@ -149,23 +154,24 @@ body {
     height: auto;
     padding: 2px;
     opacity: 1.0;
-    filter: alpha(opacity=100);
+    position: relative;
 }
 .img-menutiers {
     width: calc((100%/3) - 4px);
     height: auto;
     padding: 2px;
     opacity: 1.0;
-    filter: alpha(opacity=100);
+    position: relative;
 }
 
-.img-menutiers:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+.img-menudemi:hover  .white-bg,
+.img-menutiers:hover  .white-bg {
+  opacity: 0.5;
 }
-.img-menudemi:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+
+.img-menudemi:hover .hover-skills,
+.img-menutiers:hover .hover-skills {
+  opacity: 1;
 }
 
 /* menu compétences */
@@ -175,10 +181,6 @@ body {
     padding-bottom: 40px;
 }
 
-.lignecomp {
-    text-align: center;
-}
-
 .blockcomp {
     width: calc((100%/3) - 5px);
     height: auto;
@@ -186,16 +188,28 @@ body {
     display: inline-block;
 }
 
-.description-compétences {
+.hover-skills {
     position: absolute;
+    top : 0;
+    left: 0;
     opacity: 0;
-    width: calc((100%/3) - 4px);
-    height: auto;
-    padding: 2px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 0px 1px #4A494C;
 }
 
-.description-compétences:hover {
-    opacity: 1;
+.white-bg {
+  position: absolute;
+  top : 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
 }
 
 
@@ -298,6 +312,7 @@ body {
     width: calc(100%/1.5);
     padding: 5px;
     position:absolute;
+
 }
 
 .img-website3 {
