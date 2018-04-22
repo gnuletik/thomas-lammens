@@ -79,6 +79,12 @@ body {
   color: grey;
 }
 
+.navbar.grey:hover a.navbar.grey:active{
+  color: black;
+}
+
+
+
 .elem-nav {
   display: inline;
   padding: 45px;
