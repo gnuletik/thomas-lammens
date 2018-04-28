@@ -143,7 +143,10 @@ body {
   display: inline-block;
 }
 
-
+.slide-gallery {
+  display: flex;
+  flex-direction: row;
+}
 .img-menu{
   width: calc(100% - 4px);
   height: auto;
