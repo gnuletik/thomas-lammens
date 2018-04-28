@@ -111,6 +111,7 @@ body {
   background-image: url("../Images/Pages de garde/fond.jpg");
   width:100%;
   height: 900px;
+  z-index: 1;
 }
 
 .thomas-picture{
@@ -121,14 +122,42 @@ body {
   top: 105px;
   left: 50%;
   transform: translate(-50%, 0);
+  z-index: 3;
 }
 
-.TitreJS {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 60px;
-  width: 100%;
+.titre-fadein{
+  color: white;
+  text-align: center;
+  top: 60%;
+  position: absolute;
+  z-index: 2;
+
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+  -ms-animation: fadein 4s; /* Internet Explorer */
+  -o-animation: fadein 4s; /* Opera < 12.1 */
+  animation: fadein 4s;
+}
+
+.headtext-one {
+  left:10%;
+  font-size: 110px;
+}
+.headtext-two {
+  left:55%;
+  font-size: 110px;
+}
+.headtext-three {
+  left:72%;
+  font-size: 30px;
+  top:82%;
+}
+
+
+@keyframes fadein {
+  0% {opacity: 0;}
+  45% {opacity: 0.5;}
+  100% {opacity: 1;}
 }
 
 
@@ -143,11 +172,8 @@ body {
   display: inline-block;
 }
 
-.slide-gallery {
-  display: flex;
-  flex-direction: row;
-}
-.img-menu{
+
+.img-menu {
   width: calc(100% - 4px);
   height: auto;
   padding: 2px;
