@@ -60,6 +60,10 @@ body {
   padding-bottom: 5%;
   font-weight: bold;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: space-around;
 }
 
 .elem-nav a:link,
@@ -77,39 +81,38 @@ body {
   color: grey;
 }
 
-.elem-nav-grey a:hover{
+.elem-nav.grey a:hover{
   color: black !important;
 }
 
 .elem-nav {
-  display: inline;
   padding: 25px;
+  text-decoration: none;
 }
-
-.elem-nav-grey {
-  display: inline;
+.elem-nav.grey {
   padding: 25px;
 }
 
 /* animation nav bar */
-.cool-link {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-}
-.cool-link::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: width .3s;
+
+.elem-nav::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width .3s;
 }
 
-.cool-link:hover::after {
-    width: 100%;
-    //transition: width .3s;
+.elem-nav.grey::after{
+  background:black;
 }
+
+.elem-nav:hover::after {
+  width: 100%;
+  //transition: width .3s;
+}
+
 /* logo */
 .logo-white {
   width: 50px;
@@ -133,7 +136,7 @@ body {
   z-index: 1;
 }
 
-.thomas-picture{
+.thomas-picture {
   background-image: url("../Images/Pages de garde/thomas.png");
   position: absolute;
   width: 295px;
@@ -144,18 +147,18 @@ body {
   z-index: 3;
 }
 
-.titre-fadein{
+.titre-fadein {
   color: white;
   text-align: center;
   top: 60%;
   position: absolute;
   z-index: 2;
 
-  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 4s; /* Firefox < 16 */
-  -ms-animation: fadein 4s; /* Internet Explorer */
-  -o-animation: fadein 4s; /* Opera < 12.1 */
-  animation: fadein 4s;
+  -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 6s; /* Firefox < 16 */
+  -ms-animation: fadein 6s; /* Internet Explorer */
+  -o-animation: fadein 6s; /* Opera < 12.1 */
+  animation: fadein 6s;
 }
 
 @keyframes fadein {
