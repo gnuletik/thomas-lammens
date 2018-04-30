@@ -190,11 +190,11 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content:flex-start;
+  justify-content: space-between;
 }
 
 .img-menu {
-  width: calc(100% - 4px);
+  width: 100%;
   height: auto;
   padding: 2px;
 }
