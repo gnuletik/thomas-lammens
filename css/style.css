@@ -3,13 +3,6 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
-
-.container {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-
 /* Police - size  - titre - text ... */
 .text-menu {
   font-size: 18px;
@@ -56,8 +49,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   text-align: center;
-  padding-top: 2%;
-  padding-bottom: 5%;
+  padding-top: 3%;
   font-weight: bold;
   position: relative;
   display: flex;
@@ -83,7 +75,8 @@ body {
 }
 
 .elem-nav {
-  padding: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-decoration: none;
 }
 
@@ -188,15 +181,15 @@ body {
 /* menu-travaux */
 
 .slide-one {
-  padding-top: 7%;
-  padding-bottom: 7%;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
 .slide-gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content:stretch;
+  align-content:space-around;
 }
 
 .img-menu {
@@ -261,7 +254,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   color: white;
   text-shadow: 0px 0.5px #4A494C;
 }
@@ -293,7 +286,7 @@ body {
 .contact {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content:space-around;
 }
 
 .projetrea{
