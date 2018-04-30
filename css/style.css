@@ -22,7 +22,7 @@ body {
   font-size: 70px;
   text-align: center;
   font-weight: bold;
-  padding: 10px;
+  padding: 15px;
   text-shadow: 0px 1px #4A494C;
 
 }
@@ -63,16 +63,17 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: space-around;
+  justify-content: space-around;
+
 }
 
-.elem-nav a:link,
-.elem-nav a:visited {
+.navbar.white a:link,
+.navbar.white a:visited {
   color: white;
 }
 
-.elem-nav.black a:link,
-.elem-nav.black a:visited {
+.navbar.black a:link,
+.navbar.black a:visited {
   color: black;
 }
 
@@ -81,16 +82,9 @@ body {
   color: grey;
 }
 
-.elem-nav.grey a:hover{
-  color: black !important;
-}
-
 .elem-nav {
   padding: 25px;
   text-decoration: none;
-}
-.elem-nav.grey {
-  padding: 25px;
 }
 
 /* animation nav bar */
@@ -104,7 +98,14 @@ body {
   transition: width .3s;
 }
 
+.elem-nav.white::after{
+  background:white;
+}
+
 .elem-nav.grey::after{
+  background:black;
+}
+.elem-nav.black::after{
   background:black;
 }
 
@@ -187,20 +188,23 @@ body {
 /* menu-travaux */
 
 .slide-one {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 7%;
+  padding-bottom: 7%;
 }
 
-.gallery-img .img-menudemi, .gallery-img .img-menutiers{
-  display: inline-block;
+.slide-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content:stretch;
 }
-
 
 .img-menu {
   width: calc(100% - 4px);
   height: auto;
   padding: 2px;
 }
+
 .img-menudemi {
   width: calc((100%/2) - 4px);
   height: auto;
@@ -208,6 +212,7 @@ body {
   opacity: 1.0;
   position: relative;
 }
+
 .img-menutiers {
   width: calc((100%/3) - 4px);
   height: auto;
@@ -221,8 +226,8 @@ body {
   opacity: 0.5;
 }
 
-.img-menudemi:hover .hover-skills,
-.img-menutiers:hover .hover-skills {
+.img-menudemi:hover .slide-gallery-hover,
+.img-menutiers:hover .slide-gallery-hover {
   opacity: 1;
 }
 
@@ -241,25 +246,24 @@ body {
   align-items: baseline;
 }
 
-
-.blockcomp {
+.slide-skills {
   width: calc((100%/3) - 5px);
   height: auto;
   padding: 20px;
 }
 
-.hover-skills {
+.slide-gallery-hover {
   position: absolute;
-  top : 0;
+  top: 0;
   left: 0;
   opacity: 0;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:center;
   color: white;
-  text-shadow: 0px 1px #4A494C;
+  text-shadow: 0px 0.5px #4A494C;
 }
 
 .white-bg {
@@ -353,7 +357,8 @@ body {
 .gallery-website {
   display: flex;
   flex-direction: column;
-  align-items: space-around;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .img-website1 {
@@ -369,7 +374,6 @@ body {
   width: calc(100%/1.5);
   padding: 5px;
   position:absolute;
-
 }
 
 .img-website3 {
