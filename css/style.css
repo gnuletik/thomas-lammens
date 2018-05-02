@@ -183,60 +183,9 @@ body {
   justify-content: space-between;
 }
 
-/* slide-gallery cascade*/
-*{box-sizing: border-box;}
+/*slide-gallery fadein */
 
-html{
-  background:#e6e6e6;
-}
 
-.wrap{
-  width:80%;
-  margin: 2.6em auto 0 auto;
-}
-
-.content{
-  width:20%;
-  height:15em;
-  float: left;
-  margin: 0 0 2.6em 6.6%;
-  position: relative;
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.content:first-child{
-  margin-left:0;
-}
-
-.cssanimations .content{
-  opacity:0;
-}
-
-.cssanimations .come-in{
-  animation:cascade 0.5s 1 cubic-bezier(0, 0.59, 0.24, 1.33) forwards;
-}
-
-.come-in:nth-of-type(1n){
-  animation-delay:0.1s;
-}
-
-.come-in:nth-of-type(2n){
-  animation-delay:0.2s;
-}
-
-.come-in:nth-of-type(3n){
-  animation-delay:0.3s;
-}
-
-.come-in:nth-of-type(4n){
-  animation-delay:0.4s;
-}
-
-@keyframes cascade{
-	from {bottom:-50px; transform: scale(0.8); opacity:0;}
-	to {bottom:0px; transform: scale(1); opacity:1;}
-}
 /*slide-gallery hover */
 
 
