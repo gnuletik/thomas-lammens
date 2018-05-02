@@ -269,7 +269,7 @@ body {
 .img-menudemi {
   width: calc((100%/2) - 4px);
   height: auto;
-  padding: 2px;
+  margin: 2px;
   opacity: 1.0;
   position: relative;
 }
